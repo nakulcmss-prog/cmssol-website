@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CoreMartrix Software Solution | CMSSol – Transforming Ideas Into Intelligence</title>
+<meta name="description" content="CoreMartrix Software Solution (CMSSol) – Leading software development, AI, cloud, and digital transformation company in Indore, India.">
+<link rel="canonical" href="https://www.cmssol.com">
+<meta property="og:url" content="https://www.cmssol.com">
+<meta property="og:title" content="CoreMartrix Software Solution | CMSSol">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg:        #FFFFFF;
+  --bg-soft:   #F4F7FF;
+  --bg-card:   #FFFFFF;
+  --bg-section:#F0F4FF;
+  --bg-hover:  #EBF0FF;
+  --blue-deep: #0B2577;
+  --blue-mid:  #1A56DB;
+  --blue-light:#38A3FF;
+  --blue-cyan: #0EA5E9;
+  --accent:    #1A56DB;
+  --accent-h:  #0B2577;
+  --text-h:    #0B1437;
+  --text-p:    #374151;
+  --text-m:    #6B7A99;
+  --text-f:    #9CA3AF;
+  --border:    #E2E8F8;
+  --border-b:  rgba(26,86,219,0.18);
+  --shadow:    0 2px 24px rgba(26,86,219,0.08);
+  --shadow-h:  0 8px 40px rgba(26,86,219,0.16);
+  --font-d:    'Syne', sans-serif;
+  --font-b:    'DM Sans', sans-serif;
+  --r-sm:      6px;
+  --r-md:      12px;
+  --r-lg:      20px;
+  --r-xl:      32px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text-p);font-family:var(--font-b);font-size:16px;line-height:1.7;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+
+/* ── NAV ── */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:1000;
+  background:rgba(255,255,255,0.95);
+  backdrop-filter:blur(20px);
+  border-bottom:1px solid var(--border);
+  padding:0 5%;
+  display:flex;align-items:center;justify-content:space-between;
+  height:72px;
+  box-shadow:0 1px 20px rgba(26,86,219,0.06);
+}
+
+/* ── LOGO ── */
+.nav-logo{display:flex;align-items:center;gap:0;text-decoration:none}
+.logo-svg{width:44px;height:44px;flex-shrink:0}
+.logo-divider{width:1px;height:36px;background:#CBD5F0;margin:0 14px;flex-shrink:0}
+.logo-wordmark{display:flex;flex-direction:column;justify-content:center}
+.logo-name{font-family:var(--font-d);font-size:18px;font-weight:800;color:var(--text-h);letter-spacing:0.04em;line-height:1.1;text-transform:uppercase}
+.logo-tagline{font-size:9px;font-weight:500;color:var(--text-m);letter-spacing:0.14em;text-transform:uppercase;line-height:1;margin-top:3px}
+
+.nav-links{display:flex;align-items:center;gap:2px;list-style:none}
+.nav-links>li{position:relative}
+.nav-links>li>a{
+  display:flex;align-items:center;gap:5px;
+  padding:8px 13px;border-radius:var(--r-sm);
+  font-size:14px;font-weight:500;color:var(--text-p);
+  transition:all .2s;
+}
+.nav-links>li>a:hover{color:var(--accent);background:var(--bg-hover)}
+.arrow{font-size:9px;transition:transform .2s;color:var(--text-m)}
+.nav-links>li:hover>a .arrow{transform:rotate(180deg)}
+
+.dropdown{
+  position:absolute;top:calc(100% + 8px);left:0;
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:var(--r-md);
+  min-width:240px;padding:8px;
+  opacity:0;pointer-events:none;
+  transform:translateY(-6px);
+  transition:all .2s;
+  box-shadow:0 20px 60px rgba(11,37,119,0.12);
+}
+.nav-links>li:hover .dropdown{opacity:1;pointer-events:all;transform:translateY(0)}
+.dropdown a{display:block;padding:9px 14px;border-radius:8px;font-size:13.5px;color:var(--text-p);transition:all .15s}
+.dropdown a:hover{background:var(--bg-hover);color:var(--accent)}
+.dtitle{font-size:10.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--text-f);padding:8px 14px 3px}
+
+.nav-cta{background:var(--accent)!important;color:#fff!important;padding:10px 22px!important;border-radius:var(--r-sm)!important;font-weight:600!important;transition:all .2s!important}
+.nav-cta:hover{background:var(--accent-h)!important;box-shadow:var(--shadow-h)!important}
+
+/* ── HERO ── */
+.hero{
+  min-height:100vh;
+  padding:120px 5% 80px;
+  display:flex;align-items:center;
+  background:linear-gradient(160deg,#F0F5FF 0%,#FFFFFF 50%,#F8FAFF 100%);
+  position:relative;overflow:hidden;
+}
+.hero-dots{
+  position:absolute;inset:0;opacity:0.5;
+  background-image:radial-gradient(circle,#C7D7FF 1px,transparent 1px);
+  background-size:32px 32px;
+}
+.hero-blob{
+  position:absolute;top:-200px;right:-200px;
+  width:700px;height:700px;border-radius:50%;
+  background:radial-gradient(circle,rgba(26,86,219,.07) 0%,transparent 70%);
+}
+.hero-blob2{
+  position:absolute;bottom:-250px;left:-150px;
+  width:600px;height:600px;border-radius:50%;
+  background:radial-gradient(circle,rgba(14,165,233,.05) 0%,transparent 70%);
+}
+.hero-content{position:relative;z-index:1;max-width:680px}
+.hero-badge{
+  display:inline-flex;align-items:center;gap:8px;
+  background:rgba(26,86,219,0.08);
+  border:1px solid rgba(26,86,219,0.2);
+  border-radius:100px;padding:6px 16px 6px 8px;margin-bottom:28px;
+}
+.badge-dot{width:6px;height:6px;border-radius:50%;background:var(--accent);animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.8)}}
+.hero-badge span{font-size:12.5px;color:var(--accent);font-weight:600}
+.hero h1{
+  font-family:var(--font-d);
+  font-size:clamp(38px,5.5vw,68px);
+  font-weight:800;line-height:1.06;
+  color:var(--text-h);letter-spacing:-.025em;
+  margin-bottom:22px;
+}
+.hero h1 .hl{
+  background:linear-gradient(135deg,var(--blue-mid) 0%,var(--blue-cyan) 100%);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+}
+.hero-sub{font-size:17px;color:var(--text-m);line-height:1.75;margin-bottom:38px;max-width:520px}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap}
+
+.btn-primary{
+  display:inline-flex;align-items:center;gap:8px;
+  background:var(--accent);color:#fff;
+  padding:14px 28px;border-radius:var(--r-sm);
+  font-weight:600;font-size:15px;
+  border:none;cursor:pointer;transition:all .2s;
+  box-shadow:0 4px 20px rgba(26,86,219,0.3);
+}
+.btn-primary:hover{background:var(--accent-h);transform:translateY(-2px);box-shadow:0 8px 30px rgba(26,86,219,0.4)}
+.btn-outline{
+  display:inline-flex;align-items:center;gap:8px;
+  background:#fff;color:var(--accent);
+  padding:14px 28px;border-radius:var(--r-sm);
+  font-weight:500;font-size:15px;
+  border:1.5px solid var(--border-b);cursor:pointer;transition:all .2s;
+}
+.btn-outline:hover{border-color:var(--accent);background:var(--bg-hover);transform:translateY(-2px)}
+
+.hero-stats{display:flex;gap:48px;margin-top:60px;flex-wrap:wrap}
+.hero-stat .num{font-family:var(--font-d);font-size:36px;font-weight:800;color:var(--text-h);line-height:1}
+.hero-stat .num span{color:var(--accent)}
+.hero-stat .lbl{font-size:13px;color:var(--text-m);margin-top:4px}
+
+/* ── MARQUEE ── */
+.marquee-wrap{
+  padding:20px 0;
+  background:#fff;
+  border-top:1px solid var(--border);
+  border-bottom:1px solid var(--border);
+  overflow:hidden;
+}
+.marquee-track{display:flex;gap:56px;white-space:nowrap;animation:marquee 28s linear infinite}
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.mitem{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:13.5px;font-weight:600;color:var(--text-m);
+  flex-shrink:0;letter-spacing:.02em;
+}
+.mitem-dot{
+  width:20px;height:20px;border-radius:50%;
+  background:linear-gradient(135deg,var(--blue-mid),var(--blue-cyan));
+  display:flex;align-items:center;justify-content:center;
+  color:#fff;font-size:10px;font-weight:700;
+}
+
+/* ── SECTION BASE ── */
+section{padding:88px 5%}
+.stag{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:11.5px;font-weight:700;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--accent);margin-bottom:14px;
+}
+.stag::before{content:'';display:block;width:22px;height:2.5px;background:var(--accent);border-radius:2px}
+.stitle{
+  font-family:var(--font-d);
+  font-size:clamp(26px,3.2vw,42px);font-weight:800;
+  color:var(--text-h);line-height:1.15;letter-spacing:-.02em;margin-bottom:14px;
+}
+.ssub{font-size:16.5px;color:var(--text-m);max-width:540px;line-height:1.75;margin-bottom:52px}
+
+/* ── SERVICES ── */
+.services-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:1px;background:var(--border);
+  border:1px solid var(--border);border-radius:var(--r-lg);overflow:hidden;
+}
+.scard{
+  background:#fff;padding:34px 30px;transition:all .25s;
+  cursor:pointer;position:relative;overflow:hidden;
+}
+.scard::after{
+  content:'';position:absolute;bottom:0;left:0;right:0;height:3px;
+  background:linear-gradient(90deg,var(--blue-mid),var(--blue-cyan));
+  transform:scaleX(0);transform-origin:left;transition:transform .3s;
+}
+.scard:hover::after{transform:scaleX(1)}
+.scard:hover{background:var(--bg-hover);transform:translateY(-2px)}
+.scard-icon{
+  width:52px;height:52px;
+  background:linear-gradient(135deg,rgba(26,86,219,.1),rgba(14,165,233,.1));
+  border:1px solid rgba(26,86,219,.15);
+  border-radius:var(--r-sm);
+  display:flex;align-items:center;justify-content:center;
+  font-size:24px;margin-bottom:18px;transition:all .25s;
+}
+.scard:hover .scard-icon{background:linear-gradient(135deg,rgba(26,86,219,.18),rgba(14,165,233,.18));border-color:rgba(26,86,219,.3)}
+.scard h3{font-family:var(--font-d);font-size:18px;font-weight:700;color:var(--text-h);margin-bottom:9px}
+.scard p{font-size:14px;color:var(--text-m);line-height:1.65}
+.scard .lnk{
+  display:inline-flex;align-items:center;gap:5px;
+  font-size:13px;color:var(--accent);margin-top:16px;font-weight:600;
+  transition:gap .2s;
+}
+.scard:hover .lnk{gap:9px}
+
+/* ── STATS ── */
+.stats-wrap{
+  background:linear-gradient(135deg,var(--blue-deep) 0%,var(--blue-mid) 100%);
+  padding:64px 5%;
+}
+.stats-inner{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:1px;background:rgba(255,255,255,.12);
+  border:1px solid rgba(255,255,255,.12);border-radius:var(--r-lg);overflow:hidden;
+}
+.sitem{
+  background:rgba(255,255,255,.05);
+  padding:34px 24px;text-align:center;
+  transition:background .2s;
+}
+.sitem:hover{background:rgba(255,255,255,.1)}
+.snum{font-family:var(--font-d);font-size:46px;font-weight:800;color:#fff;line-height:1;margin-bottom:7px}
+.snum span{color:#7DD3FC}
+.slbl{font-size:13.5px;color:rgba(255,255,255,.65);font-weight:400}
+
+/* ── TECH PILLS ── */
+.tech-pills{display:flex;flex-wrap:wrap;gap:10px;margin-top:38px}
+.tpill{
+  display:flex;align-items:center;gap:8px;
+  padding:9px 18px;
+  background:#fff;border:1.5px solid var(--border);
+  border-radius:100px;font-size:13.5px;color:var(--text-p);font-weight:500;
+  transition:all .2s;cursor:default;
+  box-shadow:var(--shadow);
+}
+.tpill:hover{border-color:var(--accent);color:var(--accent);background:var(--bg-hover);box-shadow:var(--shadow-h)}
+.tpill-dot{width:6px;height:6px;border-radius:50%;background:linear-gradient(135deg,var(--blue-mid),var(--blue-cyan))}
+
+/* ── INDUSTRIES ── */
+.ind-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.ind-card{
+  background:#fff;border:1.5px solid var(--border);border-radius:var(--r-md);
+  padding:28px 22px;transition:all .25s;cursor:pointer;
+  box-shadow:var(--shadow);
+}
+.ind-card:hover{border-color:var(--border-b);transform:translateY(-4px);box-shadow:var(--shadow-h)}
+.ind-icon{font-size:30px;margin-bottom:13px}
+.ind-card h4{font-family:var(--font-d);font-size:15.5px;font-weight:700;color:var(--text-h);margin-bottom:6px}
+.ind-card p{font-size:13px;color:var(--text-m);line-height:1.6}
+
+/* ── WHY US ── */
+.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+@media(max-width:900px){.why-grid{grid-template-columns:1fr}}
+.why-pts{display:flex;flex-direction:column;gap:26px}
+.why-pt{display:flex;gap:18px;align-items:flex-start}
+.why-num{
+  width:42px;height:42px;flex-shrink:0;border-radius:var(--r-sm);
+  background:linear-gradient(135deg,var(--blue-mid),var(--blue-cyan));
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--font-d);font-size:14px;font-weight:700;color:#fff;
+  box-shadow:0 4px 16px rgba(26,86,219,0.3);
+}
+.why-pt h4{font-family:var(--font-d);font-size:16.5px;font-weight:700;color:var(--text-h);margin-bottom:5px}
+.why-pt p{font-size:14px;color:var(--text-m);line-height:1.65}
+
+.proc-box{
+  background:#fff;border:1.5px solid var(--border);border-radius:var(--r-lg);padding:36px;
+  box-shadow:var(--shadow);
+}
+.proc-step{display:flex;align-items:flex-start;gap:16px;padding:18px 0;border-bottom:1px solid var(--border)}
+.proc-step:last-child{border-bottom:none}
+.pbadge{
+  width:36px;height:36px;flex-shrink:0;border-radius:50%;
+  background:linear-gradient(135deg,var(--blue-mid),var(--blue-cyan));
+  color:#fff;display:flex;align-items:center;justify-content:center;
+  font-family:var(--font-d);font-size:13px;font-weight:700;
+  box-shadow:0 3px 12px rgba(26,86,219,0.25);
+}
+.pinfo h5{font-size:14.5px;font-weight:700;color:var(--text-h);margin-bottom:3px}
+.pinfo p{font-size:13px;color:var(--text-m);line-height:1.55}
+
+/* ── TESTIMONIALS ── */
+.ttest-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
+.tcard{
+  background:#fff;border:1.5px solid var(--border);border-radius:var(--r-md);
+  padding:30px;transition:all .25s;box-shadow:var(--shadow);
+}
+.tcard:hover{border-color:var(--border-b);box-shadow:var(--shadow-h);transform:translateY(-3px)}
+.tstars{color:#F59E0B;font-size:15px;margin-bottom:14px;letter-spacing:2px}
+.tcard p{font-size:14.5px;color:var(--text-p);line-height:1.75;font-style:italic}
+.tauthor{display:flex;align-items:center;gap:12px;margin-top:22px;padding-top:18px;border-top:1px solid var(--border)}
+.tavatar{
+  width:42px;height:42px;border-radius:50%;
+  background:linear-gradient(135deg,var(--blue-mid),var(--blue-cyan));
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--font-d);font-size:13.5px;font-weight:700;color:#fff;
+}
+.tname{font-size:14px;font-weight:700;color:var(--text-h)}
+.trole{font-size:12px;color:var(--text-m)}
+
+/* ── CONTACT ── */
+.contact-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:60px;align-items:start}
+@media(max-width:900px){.contact-grid{grid-template-columns:1fr}}
+.cinfo-cards{display:flex;flex-direction:column;gap:14px;margin-top:28px}
+.cinfo-card{
+  display:flex;align-items:center;gap:16px;
+  background:#fff;border:1.5px solid var(--border);border-radius:var(--r-md);
+  padding:18px 22px;box-shadow:var(--shadow);
+}
+.cinfo-icon{
+  width:44px;height:44px;flex-shrink:0;border-radius:var(--r-sm);
+  background:linear-gradient(135deg,rgba(26,86,219,.1),rgba(14,165,233,.1));
+  border:1px solid rgba(26,86,219,.15);
+  display:flex;align-items:center;justify-content:center;font-size:20px;
+}
+.cinfo-txt h5{font-size:12px;color:var(--text-m);margin-bottom:2px;font-weight:500}
+.cinfo-txt p{font-size:15px;font-weight:600;color:var(--text-h)}
+
+.cform{background:#fff;border:1.5px solid var(--border);border-radius:var(--r-lg);padding:38px;box-shadow:var(--shadow)}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:600px){.frow{grid-template-columns:1fr}}
+.fg{margin-bottom:18px}
+.fg label{display:block;font-size:12.5px;font-weight:600;color:var(--text-p);margin-bottom:7px;letter-spacing:.02em}
+.fg input,.fg select,.fg textarea{
+  width:100%;background:var(--bg-soft);
+  border:1.5px solid var(--border);border-radius:var(--r-sm);
+  padding:11px 15px;font-family:var(--font-b);font-size:14px;color:var(--text-h);
+  outline:none;transition:border-color .2s;resize:vertical;
+}
+.fg input:focus,.fg select:focus,.fg textarea:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(26,86,219,.08)}
+.fg select option{background:#fff}
+.fg textarea{min-height:110px}
+.btn-submit{
+  width:100%;background:linear-gradient(135deg,var(--blue-mid),var(--blue-cyan));
+  color:#fff;border:none;cursor:pointer;
+  padding:14px 28px;border-radius:var(--r-sm);
+  font-family:var(--font-d);font-size:15.5px;font-weight:700;
+  transition:all .2s;box-shadow:0 4px 20px rgba(26,86,219,0.3);
+  letter-spacing:.02em;
+}
+.btn-submit:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(26,86,219,0.4)}
+
+/* ── CTA BANNER ── */
+.cta-wrap{
+  background:linear-gradient(135deg,var(--blue-deep) 0%,var(--blue-mid) 60%,var(--blue-cyan) 100%);
+  padding:80px 5%;
+}
+.cta-inner{
+  background:rgba(255,255,255,.07);
+  border:1px solid rgba(255,255,255,.15);
+  border-radius:var(--r-xl);padding:64px;text-align:center;
+  position:relative;overflow:hidden;
+}
+.cta-inner::before{
+  content:'';position:absolute;top:-120px;left:50%;transform:translateX(-50%);
+  width:400px;height:400px;border-radius:50%;
+  background:radial-gradient(circle,rgba(255,255,255,.08) 0%,transparent 70%);
+}
+.cta-inner h2{font-family:var(--font-d);font-size:clamp(26px,4vw,46px);font-weight:800;color:#fff;line-height:1.15;margin-bottom:18px;position:relative}
+.cta-inner p{font-size:16px;color:rgba(255,255,255,.7);margin-bottom:36px;max-width:460px;margin-left:auto;margin-right:auto;position:relative}
+.cta-actions{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;position:relative}
+.btn-white{
+  display:inline-flex;align-items:center;gap:8px;
+  background:#fff;color:var(--blue-mid);
+  padding:14px 28px;border-radius:var(--r-sm);
+  font-weight:700;font-size:15px;cursor:pointer;
+  transition:all .2s;box-shadow:0 4px 20px rgba(0,0,0,0.15);
+}
+.btn-white:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(0,0,0,0.2)}
+.btn-woutline{
+  display:inline-flex;align-items:center;gap:8px;
+  background:transparent;color:#fff;
+  padding:14px 28px;border-radius:var(--r-sm);
+  font-weight:500;font-size:15px;
+  border:1.5px solid rgba(255,255,255,.4);cursor:pointer;transition:all .2s;
+}
+.btn-woutline:hover{border-color:#fff;background:rgba(255,255,255,.1)}
+
+/* ── FOOTER ── */
+footer{background:var(--text-h);padding:60px 5% 28px}
+.fgrid{
+  display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:44px;
+  padding-bottom:44px;border-bottom:1px solid rgba(255,255,255,.08);margin-bottom:28px;
+}
+@media(max-width:900px){.fgrid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.fgrid{grid-template-columns:1fr}}
+.fabout p{font-size:13.5px;color:rgba(255,255,255,.5);line-height:1.75;margin:16px 0 22px}
+.socials{display:flex;gap:10px}
+.sbtn{
+  width:38px;height:38px;
+  background:rgba(255,255,255,.07);
+  border:1px solid rgba(255,255,255,.1);
+  border-radius:var(--r-sm);
+  display:flex;align-items:center;justify-content:center;
+  font-size:14px;color:rgba(255,255,255,.6);
+  transition:all .2s;cursor:pointer;text-decoration:none;
+}
+.sbtn:hover{background:var(--blue-mid);border-color:var(--blue-mid);color:#fff}
+.fcol h4{
+  font-family:var(--font-d);font-size:13px;font-weight:700;
+  color:rgba(255,255,255,.9);letter-spacing:.08em;text-transform:uppercase;margin-bottom:18px;
+}
+.fcol ul{list-style:none;display:flex;flex-direction:column;gap:9px}
+.fcol a{font-size:13.5px;color:rgba(255,255,255,.45);transition:color .2s}
+.fcol a:hover{color:rgba(255,255,255,.9)}
+.fbot{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
+.fbot p{font-size:12.5px;color:rgba(255,255,255,.3)}
+.fbot a{color:rgba(255,255,255,.55)}
+
+/* ── FOOTER LOGO WHITE VERSION ── */
+.footer-logo .logo-name{color:#fff}
+.footer-logo .logo-tagline{color:rgba(255,255,255,.4)}
+.footer-logo .logo-divider{background:rgba(255,255,255,.15)}
+
+/* ── SCROLL ANIM ── */
+.fu{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+.fu.vis{opacity:1;transform:translateY(0)}
+
+/* ── MOBILE NAV ── */
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;background:none;border:none}
+.hamburger span{display:block;width:24px;height:2px;background:var(--text-p);border-radius:2px;transition:all .3s}
+@media(max-width:1100px){.nav-links{display:none}.hamburger{display:flex}}
+</style>
+</head>
+<body>
+
+<!-- ═══ NAV ═══ -->
+<nav>
+  <a href="https://www.cmssol.com" class="nav-logo">
+    <!-- SVG Logo matching uploaded design -->
+    <svg class="logo-svg" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#0EA5E9"/>
+          <stop offset="100%" stop-color="#1A56DB"/>
+        </linearGradient>
+        <linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#38BFFC"/>
+          <stop offset="100%" stop-color="#0B2577"/>
+        </linearGradient>
+      </defs>
+      <!-- Outer arc (dark blue) -->
+      <path d="M22 4 C31.941 4 40 12.059 40 22 C40 31.941 31.941 40 22 40 C15.5 40 9.8 36.5 6.8 31.2 C9.5 33.8 13.2 35.4 17.2 35.4 C26.2 35.4 33.5 28.1 33.5 19.1 C33.5 10.1 26.2 2.8 17.2 2.8 C13 2.8 9.2 4.5 6.4 7.2 C9.4 5.1 15 4 22 4 Z" fill="url(#g2)" opacity="0.9"/>
+      <!-- Middle arc (mid blue) -->
+      <path d="M17.2 8.5 C23.4 8.5 28.5 13.6 28.5 19.8 C28.5 26 23.4 31.1 17.2 31.1 C13.5 31.1 10.2 29.3 8.1 26.6 C9.8 28.2 12.1 29.2 14.6 29.2 C20 29.2 24.4 24.8 24.4 19.4 C24.4 14 20 9.6 14.6 9.6 C12 9.6 9.6 10.6 7.8 12.3 C9.8 9.9 13.3 8.5 17.2 8.5 Z" fill="url(#g1)" opacity="0.95"/>
+      <!-- Inner crescent (light cyan) -->
+      <path d="M14.6 13.8 C18.1 13.8 20.9 16.6 20.9 20.1 C20.9 23.6 18.1 26.4 14.6 26.4 C12.5 26.4 10.7 25.4 9.5 23.9 C10.4 24.7 11.7 25.2 13.1 25.2 C16.2 25.2 18.7 22.7 18.7 19.6 C18.7 16.5 16.2 14 13.1 14 C11.7 14 10.5 14.5 9.5 15.3 C10.7 14.3 12.5 13.8 14.6 13.8 Z" fill="#7DD3FC" opacity="1"/>
+    </svg>
+    <div class="logo-divider"></div>
+    <div class="logo-wordmark">
+      <span class="logo-name">COREMATRIX</span>
+      <span class="logo-tagline">Software Solution</span>
+    </div>
+  </a>
+
+  <ul class="nav-links">
+    <li>
+      <a href="#">Company <span class="arrow">▾</span></a>
+      <div class="dropdown">
+        <a href="https://www.cmssol.com/about">About CMSSol</a>
+        <a href="https://www.cmssol.com/team">Our Team</a>
+        <a href="https://www.cmssol.com/products">Our Products</a>
+        <a href="https://www.cmssol.com/partners">Partners</a>
+        <a href="https://www.cmssol.com/careers">Careers</a>
+      </div>
+    </li>
+    <li>
+      <a href="#">Services <span class="arrow">▾</span></a>
+      <div class="dropdown" style="min-width:250px">
+        <div class="dtitle">Development</div>
+        <a href="https://www.cmssol.com/services/web-development">Web Development</a>
+        <a href="https://www.cmssol.com/services/mobile-app-development">Mobile App Development</a>
+        <a href="https://www.cmssol.com/services/custom-software">Custom Software</a>
+        <a href="https://www.cmssol.com/services/ecommerce">E-Commerce Solutions</a>
+        <div class="dtitle">Consulting</div>
+        <a href="https://www.cmssol.com/services/it-consultancy">IT Consultancy</a>
+        <a href="https://www.cmssol.com/services/digital-transformation">Digital Transformation</a>
+        <a href="https://www.cmssol.com/services/team-augmentation">Team Augmentation</a>
+      </div>
+    </li>
+    <li>
+      <a href="#">Technology <span class="arrow">▾</span></a>
+      <div class="dropdown">
+        <div class="dtitle">Enterprise</div>
+        <a href="https://www.cmssol.com/technology/cloud">Cloud Computing</a>
+        <a href="https://www.cmssol.com/technology/microsoft">Microsoft Stack</a>
+        <a href="https://www.cmssol.com/technology/open-source">Open Source</a>
+        <div class="dtitle">Emerging Tech</div>
+        <a href="https://www.cmssol.com/technology/ai-ml">AI / ML Solutions</a>
+        <a href="https://www.cmssol.com/technology/blockchain">Blockchain &amp; Web3</a>
+        <a href="https://www.cmssol.com/technology/iot">IoT Development</a>
+        <a href="https://www.cmssol.com/technology/ar-vr">AR / VR</a>
+      </div>
+    </li>
+    <li>
+      <a href="#">Industries <span class="arrow">▾</span></a>
+      <div class="dropdown">
+        <a href="https://www.cmssol.com/industries/healthcare">Healthcare</a>
+        <a href="https://www.cmssol.com/industries/fintech">FinTech &amp; Banking</a>
+        <a href="https://www.cmssol.com/industries/education">Education</a>
+        <a href="https://www.cmssol.com/industries/retail">Retail &amp; E-commerce</a>
+        <a href="https://www.cmssol.com/industries/real-estate">Real Estate</a>
+        <a href="https://www.cmssol.com/industries/logistics">Logistics</a>
+      </div>
+    </li>
+    <li><a href="https://www.cmssol.com/our-work">Our Work</a></li>
+    <li><a href="https://www.cmssol.com/blog">Blog</a></li>
+    <li><a href="https://www.cmssol.com/#contact" class="nav-cta">Get a Quote</a></li>
+  </ul>
+  <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<!-- ═══ HERO ═══ -->
+<section class="hero" id="home">
+  <div class="hero-dots"></div>
+  <div class="hero-blob"></div>
+  <div class="hero-blob2"></div>
+  <div class="hero-content">
+    <div class="hero-badge">
+      <div class="badge-dot"></div>
+      <span>Now offering AI-powered enterprise solutions</span>
+    </div>
+    <h1>Transforming Ideas<br>Into <span class="hl">Digital Intelligence</span></h1>
+    <p class="hero-sub">CoreMartrix Software Solution (CMSSol) builds future-ready web, mobile, cloud and AI solutions that help businesses scale, innovate and lead in the digital era.</p>
+    <div class="hero-actions">
+      <a href="https://www.cmssol.com/#contact" class="btn-primary">Start a Project &nbsp;→</a>
+      <a href="https://www.cmssol.com/#services" class="btn-outline">Explore Services</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat"><div class="num">150<span>+</span></div><div class="lbl">Projects Delivered</div></div>
+      <div class="hero-stat"><div class="num">8<span>+</span></div><div class="lbl">Years of Expertise</div></div>
+      <div class="hero-stat"><div class="num">40<span>+</span></div><div class="lbl">Expert Engineers</div></div>
+      <div class="hero-stat"><div class="num">98<span>%</span></div><div class="lbl">Client Satisfaction</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ MARQUEE ═══ -->
+<div class="marquee-wrap">
+  <div class="marquee-track">
+    <div class="mitem"><div class="mitem-dot">R</div>React.js</div>
+    <div class="mitem"><div class="mitem-dot">N</div>Node.js</div>
+    <div class="mitem"><div class="mitem-dot">P</div>Python</div>
+    <div class="mitem"><div class="mitem-dot">F</div>Flutter</div>
+    <div class="mitem"><div class="mitem-dot">A</div>AWS Cloud</div>
+    <div class="mitem"><div class="mitem-dot">AI</div>OpenAI</div>
+    <div class="mitem"><div class="mitem-dot">K</div>Kubernetes</div>
+    <div class="mitem"><div class="mitem-dot">B</div>Blockchain</div>
+    <div class="mitem"><div class="mitem-dot">.N</div>.NET Core</div>
+    <div class="mitem"><div class="mitem-dot">L</div>Laravel</div>
+    <div class="mitem"><div class="mitem-dot">V</div>Vue.js</div>
+    <div class="mitem"><div class="mitem-dot">D</div>Docker</div>
+    <div class="mitem"><div class="mitem-dot">M</div>MongoDB</div>
+    <!-- duplicate -->
+    <div class="mitem"><div class="mitem-dot">R</div>React.js</div>
+    <div class="mitem"><div class="mitem-dot">N</div>Node.js</div>
+    <div class="mitem"><div class="mitem-dot">P</div>Python</div>
+    <div class="mitem"><div class="mitem-dot">F</div>Flutter</div>
+    <div class="mitem"><div class="mitem-dot">A</div>AWS Cloud</div>
+    <div class="mitem"><div class="mitem-dot">AI</div>OpenAI</div>
+    <div class="mitem"><div class="mitem-dot">K</div>Kubernetes</div>
+    <div class="mitem"><div class="mitem-dot">B</div>Blockchain</div>
+    <div class="mitem"><div class="mitem-dot">.N</div>.NET Core</div>
+    <div class="mitem"><div class="mitem-dot">L</div>Laravel</div>
+    <div class="mitem"><div class="mitem-dot">V</div>Vue.js</div>
+    <div class="mitem"><div class="mitem-dot">D</div>Docker</div>
+    <div class="mitem"><div class="mitem-dot">M</div>MongoDB</div>
+  </div>
+</div>
+
+<!-- ═══ SERVICES ═══ -->
+<section id="services" style="background:var(--bg-soft)">
+  <div class="stag">What We Do</div>
+  <h2 class="stitle">End-to-End Software Services<br>Built Around Your Vision</h2>
+  <p class="ssub">From a single feature to a complete platform — CMSSol delivers with precision, speed, and enterprise-grade quality.</p>
+  <div class="services-grid fu">
+    <div class="scard"><div class="scard-icon">🌐</div><h3>Web Development</h3><p>High-performance web applications with React, Next.js, Vue and Node.js — scalable, secure and blazing fast.</p><a href="https://www.cmssol.com/services/web-development" class="lnk">Explore Service →</a></div>
+    <div class="scard"><div class="scard-icon">📱</div><h3>Mobile App Development</h3><p>iOS, Android and cross-platform apps with Flutter and React Native — smooth experiences on every device.</p><a href="https://www.cmssol.com/services/mobile-app-development" class="lnk">Explore Service →</a></div>
+    <div class="scard"><div class="scard-icon">🤖</div><h3>AI / ML Solutions</h3><p>Custom AI integrations, LLM-powered tools, intelligent automation and machine learning models for your business.</p><a href="https://www.cmssol.com/technology/ai-ml" class="lnk">Explore Service →</a></div>
+    <div class="scard"><div class="scard-icon">☁️</div><h3>Cloud &amp; DevOps</h3><p>AWS, Azure and GCP with Docker, Kubernetes and CI/CD pipelines for seamless, zero-downtime deployment.</p><a href="https://www.cmssol.com/technology/cloud" class="lnk">Explore Service →</a></div>
+    <div class="scard"><div class="scard-icon">🛒</div><h3>E-Commerce Development</h3><p>Full-featured online stores with Shopify, Magento and custom builds — built for conversions and growth.</p><a href="https://www.cmssol.com/services/ecommerce" class="lnk">Explore Service →</a></div>
+    <div class="scard"><div class="scard-icon">🔗</div><h3>Blockchain &amp; Web3</h3><p>Smart contracts, DApps, NFT platforms and DeFi solutions built on Ethereum, Solana and more.</p><a href="https://www.cmssol.com/technology/blockchain" class="lnk">Explore Service →</a></div>
+    <div class="scard"><div class="scard-icon">🔄</div><h3>Digital Transformation</h3><p>Legacy modernisation, process automation and digital-first strategy for enterprise growth at scale.</p><a href="https://www.cmssol.com/services/digital-transformation" class="lnk">Explore Service →</a></div>
+    <div class="scard"><div class="scard-icon">💬</div><h3>IT Consultancy</h3><p>Tech audits, architecture reviews, team augmentation and CTO-as-a-service for strategic technology decisions.</p><a href="https://www.cmssol.com/services/it-consultancy" class="lnk">Explore Service →</a></div>
+    <div class="scard"><div class="scard-icon">🎨</div><h3>UI/UX Design</h3><p>Human-centered design — wireframing, prototyping and pixel-perfect interfaces that users genuinely love.</p><a href="https://www.cmssol.com/services/uiux-design" class="lnk">Explore Service →</a></div>
+  </div>
+</section>
+
+<!-- ═══ STATS ═══ -->
+<div class="stats-wrap">
+  <div class="stats-inner fu">
+    <div class="sitem"><div class="snum">150<span>+</span></div><div class="slbl">Projects Completed</div></div>
+    <div class="sitem"><div class="snum">40<span>+</span></div><div class="slbl">Tech Experts</div></div>
+    <div class="sitem"><div class="snum">15<span>+</span></div><div class="slbl">Countries Served</div></div>
+    <div class="sitem"><div class="snum">8<span>+</span></div><div class="slbl">Years in Business</div></div>
+    <div class="sitem"><div class="snum">98<span>%</span></div><div class="slbl">Client Retention</div></div>
+  </div>
+</div>
+
+<!-- ═══ TECHNOLOGY ═══ -->
+<section id="technology">
+  <div class="stag">Technology Stack</div>
+  <h2 class="stitle">Powered by Best-in-Class<br>Technologies</h2>
+  <p class="ssub">We work with the world's leading tools and frameworks to deliver robust, scalable software at every layer of the stack.</p>
+  <div class="tech-pills fu">
+    <div class="tpill"><div class="tpill-dot"></div>React.js</div>
+    <div class="tpill"><div class="tpill-dot"></div>Next.js</div>
+    <div class="tpill"><div class="tpill-dot"></div>Vue.js</div>
+    <div class="tpill"><div class="tpill-dot"></div>Angular</div>
+    <div class="tpill"><div class="tpill-dot"></div>Node.js</div>
+    <div class="tpill"><div class="tpill-dot"></div>Python</div>
+    <div class="tpill"><div class="tpill-dot"></div>Django</div>
+    <div class="tpill"><div class="tpill-dot"></div>FastAPI</div>
+    <div class="tpill"><div class="tpill-dot"></div>Laravel</div>
+    <div class="tpill"><div class="tpill-dot"></div>.NET Core</div>
+    <div class="tpill"><div class="tpill-dot"></div>Flutter</div>
+    <div class="tpill"><div class="tpill-dot"></div>React Native</div>
+    <div class="tpill"><div class="tpill-dot"></div>Swift</div>
+    <div class="tpill"><div class="tpill-dot"></div>Kotlin</div>
+    <div class="tpill"><div class="tpill-dot"></div>AWS</div>
+    <div class="tpill"><div class="tpill-dot"></div>Azure</div>
+    <div class="tpill"><div class="tpill-dot"></div>Google Cloud</div>
+    <div class="tpill"><div class="tpill-dot"></div>Docker</div>
+    <div class="tpill"><div class="tpill-dot"></div>Kubernetes</div>
+    <div class="tpill"><div class="tpill-dot"></div>PostgreSQL</div>
+    <div class="tpill"><div class="tpill-dot"></div>MongoDB</div>
+    <div class="tpill"><div class="tpill-dot"></div>Redis</div>
+    <div class="tpill"><div class="tpill-dot"></div>OpenAI API</div>
+    <div class="tpill"><div class="tpill-dot"></div>Solidity</div>
+    <div class="tpill"><div class="tpill-dot"></div>TensorFlow</div>
+    <div class="tpill"><div class="tpill-dot"></div>GraphQL</div>
+  </div>
+</section>
+
+<!-- ═══ INDUSTRIES ═══ -->
+<section id="industries" style="background:var(--bg-soft)">
+  <div class="stag">Industries We Serve</div>
+  <h2 class="stitle">Domain Expertise<br>Across Key Sectors</h2>
+  <p class="ssub">Deep domain knowledge to build software that truly fits your industry's unique challenges.</p>
+  <div class="ind-grid fu">
+    <div class="ind-card"><div class="ind-icon">🏥</div><h4>Healthcare &amp; Pharma</h4><p>HIPAA-compliant solutions, patient portals, telemedicine and EHR systems.</p></div>
+    <div class="ind-card"><div class="ind-icon">💳</div><h4>FinTech &amp; Banking</h4><p>Secure payment platforms, digital banking, lending and blockchain finance.</p></div>
+    <div class="ind-card"><div class="ind-icon">🎓</div><h4>Education &amp; EdTech</h4><p>LMS platforms, virtual classrooms, assessment tools and e-learning apps.</p></div>
+    <div class="ind-card"><div class="ind-icon">🏪</div><h4>Retail &amp; E-Commerce</h4><p>Omnichannel retail systems, POS, inventory and personalised shopping.</p></div>
+    <div class="ind-card"><div class="ind-icon">🏗️</div><h4>Real Estate</h4><p>Property listing platforms, virtual tours, CRM and smart contracts.</p></div>
+    <div class="ind-card"><div class="ind-icon">🚛</div><h4>Logistics &amp; Supply Chain</h4><p>Fleet tracking, route optimization, warehouse and last-mile delivery.</p></div>
+    <div class="ind-card"><div class="ind-icon">🏭</div><h4>Manufacturing</h4><p>ERP, IoT-based monitoring, quality control and production automation.</p></div>
+    <div class="ind-card"><div class="ind-icon">✈️</div><h4>Travel &amp; Tourism</h4><p>Booking engines, travel aggregators, hotel management and AI itineraries.</p></div>
+  </div>
+</section>
+
+<!-- ═══ WHY US ═══ -->
+<section id="about">
+  <div class="why-grid">
+    <div>
+      <div class="stag">Why CMSSol</div>
+      <h2 class="stitle">Built to Deliver,<br>Not Just Develop</h2>
+      <p class="ssub">We combine strategic thinking with technical excellence — so every line of code drives real business value.</p>
+      <div class="why-pts fu">
+        <div class="why-pt"><div class="why-num">01</div><div><h4>Agile &amp; Transparent Process</h4><p>Sprint-based delivery with weekly demos, real-time tracking and direct access to your dedicated team.</p></div></div>
+        <div class="why-pt"><div class="why-num">02</div><div><h4>Full-Stack Expertise</h4><p>From UI design and mobile apps to cloud infrastructure and AI models — one team, every layer of your product.</p></div></div>
+        <div class="why-pt"><div class="why-num">03</div><div><h4>Startup Speed, Enterprise Standards</h4><p>We ship fast without cutting corners — clean code, thorough testing and solid architecture every time.</p></div></div>
+        <div class="why-pt"><div class="why-num">04</div><div><h4>Long-Term Partnership Mindset</h4><p>We don't just build and disappear — we scale with you, providing ongoing support and new feature development.</p></div></div>
+      </div>
+    </div>
+    <div class="proc-box fu">
+      <p style="font-size:11.5px;font-weight:700;color:var(--text-m);letter-spacing:.1em;text-transform:uppercase;margin-bottom:18px">Our Delivery Process</p>
+      <div>
+        <div class="proc-step"><div class="pbadge">01</div><div class="pinfo"><h5>Discovery &amp; Strategy</h5><p>Requirements analysis, technical feasibility, project roadmap and architecture planning.</p></div></div>
+        <div class="proc-step"><div class="pbadge">02</div><div class="pinfo"><h5>Design &amp; Prototyping</h5><p>UI/UX wireframes, clickable prototypes and stakeholder sign-off before coding begins.</p></div></div>
+        <div class="proc-step"><div class="pbadge">03</div><div class="pinfo"><h5>Agile Development</h5><p>2-week sprints, daily standups, CI/CD integration and regular client reviews.</p></div></div>
+        <div class="proc-step"><div class="pbadge">04</div><div class="pinfo"><h5>QA &amp; Testing</h5><p>Automated + manual testing, performance profiling, security scans and UAT cycles.</p></div></div>
+        <div class="proc-step"><div class="pbadge">05</div><div class="pinfo"><h5>Launch &amp; Support</h5><p>Deployment, monitoring, bug fixes, feature updates and 24/7 technical support.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ TESTIMONIALS ═══ -->
+<section style="background:var(--bg-soft)">
+  <div class="stag">Client Stories</div>
+  <h2 class="stitle">What Our Clients Say</h2>
+  <p class="ssub">Real feedback from businesses we've helped build, launch and grow their digital products.</p>
+  <div class="ttest-grid fu">
+    <div class="tcard"><div class="tstars">★★★★★</div><p>"CMSSol transformed our outdated system into a modern cloud platform in just 4 months. The team's communication and delivery quality were exceptional throughout."</p><div class="tauthor"><div class="tavatar">RK</div><div><div class="tname">Rahul Khanna</div><div class="trole">CTO, HealthBridge Technologies</div></div></div></div>
+    <div class="tcard"><div class="tstars">★★★★★</div><p>"Outstanding AI integration work. They built us a custom ML pipeline that cut our processing time by 70%. Highly technical team with great business understanding."</p><div class="tauthor"><div class="tavatar">SL</div><div><div class="tname">Sarah Liu</div><div class="trole">Head of Product, DataFlow Inc</div></div></div></div>
+    <div class="tcard"><div class="tstars">★★★★★</div><p>"From MVP to full product in 6 months. The CoreMartrix team understood our vision perfectly and delivered exactly what we needed to close our Series A."</p><div class="tauthor"><div class="tavatar">AP</div><div><div class="tname">Arjun Patel</div><div class="trole">Founder, FinEdge Startup</div></div></div></div>
+  </div>
+</section>
+
+<!-- ═══ CONTACT ═══ -->
+<section id="contact">
+  <div class="contact-grid">
+    <div>
+      <div class="stag">Let's Talk</div>
+      <h2 class="stitle">Ready to Build<br>Something Great?</h2>
+      <p style="color:var(--text-m);font-size:15.5px;line-height:1.75">Tell us about your project. Our team will get back to you within 24 hours with a detailed proposal and timeline.</p>
+      <div class="cinfo-cards">
+        <div class="cinfo-card"><div class="cinfo-icon">📧</div><div class="cinfo-txt"><h5>Email Us</h5><p>hello@cmssol.com</p></div></div>
+        <div class="cinfo-card"><div class="cinfo-icon">📞</div><div class="cinfo-txt"><h5>Call Us</h5><p>+91 731 000 0000</p></div></div>
+        <div class="cinfo-card"><div class="cinfo-icon">📍</div><div class="cinfo-txt"><h5>Our Office</h5><p>Indore, Madhya Pradesh, India</p></div></div>
+      </div>
+    </div>
+    <div class="cform">
+      <h3 style="font-family:var(--font-d);font-size:21px;font-weight:800;color:var(--text-h);margin-bottom:26px">Send Us a Message</h3>
+      <div class="frow">
+        <div class="fg"><label>First Name *</label><input type="text" placeholder="Your first name"></div>
+        <div class="fg"><label>Last Name *</label><input type="text" placeholder="Your last name"></div>
+      </div>
+      <div class="frow">
+        <div class="fg"><label>Email Address *</label><input type="email" placeholder="you@company.com"></div>
+        <div class="fg"><label>Phone Number</label><input type="tel" placeholder="+91 00000 00000"></div>
+      </div>
+      <div class="fg">
+        <label>Service Required *</label>
+        <select>
+          <option value="">Select a service...</option>
+          <option>Web Development</option>
+          <option>Mobile App Development</option>
+          <option>AI / ML Solutions</option>
+          <option>Cloud &amp; DevOps</option>
+          <option>E-Commerce Development</option>
+          <option>Blockchain &amp; Web3</option>
+          <option>Digital Transformation</option>
+          <option>IT Consultancy</option>
+          <option>UI/UX Design</option>
+        </select>
+      </div>
+      <div class="fg">
+        <label>Project Budget</label>
+        <select>
+          <option value="">Select budget range...</option>
+          <option>Under ₹5 Lakhs / $5K</option>
+          <option>₹5L – ₹15L / $5K – $15K</option>
+          <option>₹15L – ₹50L / $15K – $50K</option>
+          <option>₹50L+ / $50K+</option>
+        </select>
+      </div>
+      <div class="fg"><label>Project Description *</label><textarea placeholder="Tell us about your project, goals, timeline and any technical requirements..."></textarea></div>
+      <button class="btn-submit" id="submitBtn">Send Message &nbsp;→</button>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CTA ═══ -->
+<div class="cta-wrap">
+  <div class="cta-inner">
+    <h2>Let's Build the Future<br>of Your Business — Together</h2>
+    <p>From idea to launch, CMSSol is your trusted technology partner. Schedule a free 30-minute discovery call today.</p>
+    <div class="cta-actions">
+      <a href="https://www.cmssol.com/#contact" class="btn-white">Book a Free Call &nbsp;→</a>
+      <a href="https://www.cmssol.com/our-work" class="btn-woutline">View Our Portfolio</a>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ FOOTER ═══ -->
+<footer>
+  <div class="fgrid">
+    <div class="fabout">
+      <a href="https://www.cmssol.com" class="nav-logo footer-logo">
+        <svg class="logo-svg" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="fg1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#0EA5E9"/><stop offset="100%" stop-color="#1A56DB"/></linearGradient>
+            <linearGradient id="fg2" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#38BFFC"/><stop offset="100%" stop-color="#0B2577"/></linearGradient>
+          </defs>
+          <path d="M22 4 C31.941 4 40 12.059 40 22 C40 31.941 31.941 40 22 40 C15.5 40 9.8 36.5 6.8 31.2 C9.5 33.8 13.2 35.4 17.2 35.4 C26.2 35.4 33.5 28.1 33.5 19.1 C33.5 10.1 26.2 2.8 17.2 2.8 C13 2.8 9.2 4.5 6.4 7.2 C9.4 5.1 15 4 22 4 Z" fill="url(#fg2)" opacity="0.9"/>
+          <path d="M17.2 8.5 C23.4 8.5 28.5 13.6 28.5 19.8 C28.5 26 23.4 31.1 17.2 31.1 C13.5 31.1 10.2 29.3 8.1 26.6 C9.8 28.2 12.1 29.2 14.6 29.2 C20 29.2 24.4 24.8 24.4 19.4 C24.4 14 20 9.6 14.6 9.6 C12 9.6 9.6 10.6 7.8 12.3 C9.8 9.9 13.3 8.5 17.2 8.5 Z" fill="url(#fg1)" opacity="0.95"/>
+          <path d="M14.6 13.8 C18.1 13.8 20.9 16.6 20.9 20.1 C20.9 23.6 18.1 26.4 14.6 26.4 C12.5 26.4 10.7 25.4 9.5 23.9 C10.4 24.7 11.7 25.2 13.1 25.2 C16.2 25.2 18.7 22.7 18.7 19.6 C18.7 16.5 16.2 14 13.1 14 C11.7 14 10.5 14.5 9.5 15.3 C10.7 14.3 12.5 13.8 14.6 13.8 Z" fill="#7DD3FC" opacity="1"/>
+        </svg>
+        <div class="logo-divider"></div>
+        <div class="logo-wordmark">
+          <span class="logo-name">COREMATRIX</span>
+          <span class="logo-tagline">Software Solution</span>
+        </div>
+      </a>
+      <p>CoreMartrix Software Solution (CMSSol) is a full-service software development company building intelligent, scalable digital products for businesses worldwide.</p>
+      <div class="socials">
+        <a href="https://www.linkedin.com/company/cmssol" target="_blank" class="sbtn" aria-label="LinkedIn">in</a>
+        <a href="https://twitter.com/cmssol" target="_blank" class="sbtn" aria-label="Twitter">𝕏</a>
+        <a href="https://facebook.com/cmssol" target="_blank" class="sbtn" aria-label="Facebook">f</a>
+        <a href="https://youtube.com/@cmssol" target="_blank" class="sbtn" aria-label="YouTube">▶</a>
+      </div>
+    </div>
+    <div class="fcol">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="https://www.cmssol.com/services/web-development">Web Development</a></li>
+        <li><a href="https://www.cmssol.com/services/mobile-app-development">Mobile Apps</a></li>
+        <li><a href="https://www.cmssol.com/technology/ai-ml">AI / ML</a></li>
+        <li><a href="https://www.cmssol.com/technology/cloud">Cloud &amp; DevOps</a></li>
+        <li><a href="https://www.cmssol.com/services/ecommerce">E-Commerce</a></li>
+        <li><a href="https://www.cmssol.com/technology/blockchain">Blockchain</a></li>
+        <li><a href="https://www.cmssol.com/services/uiux-design">UI/UX Design</a></li>
+      </ul>
+    </div>
+    <div class="fcol">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="https://www.cmssol.com/about">About CMSSol</a></li>
+        <li><a href="https://www.cmssol.com/team">Our Team</a></li>
+        <li><a href="https://www.cmssol.com/careers">Careers</a></li>
+        <li><a href="https://www.cmssol.com/our-work">Our Work</a></li>
+        <li><a href="https://www.cmssol.com/blog">Blog</a></li>
+        <li><a href="https://www.cmssol.com/press">Press</a></li>
+      </ul>
+    </div>
+    <div class="fcol">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:hello@cmssol.com">hello@cmssol.com</a></li>
+        <li><a href="tel:+917310000000">+91 731 000 0000</a></li>
+        <li><a href="https://maps.google.com/?q=Indore+Madhya+Pradesh+India" target="_blank">Indore, MP, India</a></li>
+        <li><a href="https://www.cmssol.com/privacy-policy">Privacy Policy</a></li>
+        <li><a href="https://www.cmssol.com/terms">Terms of Service</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="fbot">
+    <p>© 2025 <a href="https://www.cmssol.com">CoreMartrix Software Solution (CMSSol)</a>. All rights reserved.</p>
+    <p>Designed &amp; Built with ❤️ in Indore, India</p>
+  </div>
+</footer>
+
+<script>
+const obs = new IntersectionObserver(e => {
+  e.forEach(i => { if(i.isIntersecting){i.target.classList.add('vis');obs.unobserve(i.target)} })
+},{threshold:0.07});
+document.querySelectorAll('.fu').forEach(el => obs.observe(el));
+
+document.getElementById('submitBtn').addEventListener('click',function(){
+  this.textContent = '✅ Message Sent! We\'ll reply within 24 hours.';
+  this.style.background = 'linear-gradient(135deg,#0B6E4F,#0EA5E9)';
+  setTimeout(()=>{
+    this.textContent = 'Send Message →';
+    this.style.background = 'linear-gradient(135deg,var(--blue-mid),var(--blue-cyan))';
+  },4000);
+});
+</script>
+</body>
+</html>
